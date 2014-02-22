@@ -5,6 +5,7 @@
     "co-body": "*",
     "koa-logger": "*",
     "koa-json" : "*",
-    "koa-views": "*"
+    "koa-views": "*",
+    "mustache": "*"
   }
 }
