@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "koa": "*",
+    "koa-route": "*",
+    "co-body": "*",
+    "koa-logger": "*",
+    "koa-json" : "*"
+  }
+}
