@@ -4,6 +4,7 @@
     "koa-route": "*",
     "co-body": "*",
     "koa-logger": "*",
-    "koa-json" : "*"
+    "koa-json" : "*",
+    "koa-views": "*"
   }
 }
