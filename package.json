@@ -6,6 +6,7 @@
     "koa-logger": "*",
     "koa-json" : "*",
     "koa-views": "*",
-    "mustache": "*"
+    "mustache": "*",
+    "koa-static": "*"
   }
 }
