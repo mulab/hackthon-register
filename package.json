@@ -8,6 +8,7 @@
     "koa-views": "*",
     "mustache": "*",
     "koa-static": "*",
-    "koa-csrf": "*"
+    "koa-csrf": "*",
+    "koa-session": "*"
   }
 }
