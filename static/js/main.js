@@ -17,6 +17,13 @@ jQuery(function($) {
                 .push(function(command){
                     if(command.match(/y|yes/i)){
                         term.echo('sending your register info...');
+                        $.ajax({
+                            type:'POST',
+                            headers:{'x-csrf-token':$('meta[name="csrf"]').attr('content')},
+                            data:register_info,
+                            success:function(res){},
+                            error:function(res){}
+                        });
                         term.pop();
                     }else if (command.match(/n|no/i)){
                         term.echo('cancelled.');
