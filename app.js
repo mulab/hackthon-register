@@ -27,7 +27,7 @@ app.use(route.post('/',function * (next){
         name = body.Name,
         phone = body.Phone,
         email = body.Email,
-        github = body.github,
+        github = body.Github,
         response = this;
 
     try{
