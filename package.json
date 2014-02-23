@@ -5,7 +5,7 @@
     "co-body": "*",
     "koa-logger": "*",
     "koa-json" : "*",
-    "koa-views": "*",
+    "koa-views": "1.1.0",
     "mustache": "*",
     "koa-static": "*",
     "koa-csrf": "*",
