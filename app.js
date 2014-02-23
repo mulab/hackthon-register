@@ -6,9 +6,11 @@ var parse = require('co-body');
 var views = require('koa-views');
 var serve = require('koa-static');
 var csrf = require('koa-csrf');
-
+var session = require('koa-session');
 var app = koa();
-app.keys='secret';
+app.keys=['secret'];
+csrf(app);
+app.use(session());
 app.use(logger());
 
 views(app, 'html')
