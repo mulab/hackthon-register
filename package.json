@@ -7,6 +7,7 @@
     "koa-json" : "*",
     "koa-views": "*",
     "mustache": "*",
-    "koa-static": "*"
+    "koa-static": "*",
+    "koa-csrf": "*"
   }
 }
