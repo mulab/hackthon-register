@@ -3,15 +3,13 @@ jQuery(function($) {
         help: function() {
             this.echo("info         Show information about the Hackthon");
             this.echo("register     Register LabmU's Hackthon");
-            this.echo("labmu        Link to Lab mU homepage");
-            this.echo("");
+            this.echo("labmu        Link to Lab mU homepage\n");
         },
         info: function() {
             this.echo("Time: Sat 2014-03-01 10AM~10PM +0800");
             this.echo("Place: TBA");
             this.echo("Theme: Mobile development on TUNet application (http://tunet.lab.mu).");
-            this.echo("Best if U: Had exp in Android, iOS development or mobile UX design.");
-            this.echo("");
+            this.echo("Best if U: Had exp in Android, iOS development or mobile UX design.\n");
         },
         register: function() {
             var term = this,
@@ -24,11 +22,14 @@ jQuery(function($) {
                             type:'POST',
                             headers:{'x-csrf-token':$('meta[name="csrf"]').attr('content')},
                             data:register_info,
-                            success:function(res){},
-                            error:function(res){}
+                            success:function(res){
+                                term.echo('Successfully registered!\n');
+                            },
+                            error:function(res){
+                                term.echo('There are some errors. Please contact mulab.thu@gmail.com\n');
+                            }
                         });
-                        term.echo('We will contact you later :D');
-                        term.echo("");
+                        term.echo('We will contact you later :D\n');
                         term.pop();
                     }else if (command.match(/N|n|no|No/i)){
                         term.echo('cancelled.');
@@ -64,8 +65,7 @@ jQuery(function($) {
                 });
         },
         labmu: function() {
-            this.echo("Time: Sat 2014-03-01 10:00:00 +0800");
-            this.echo("");
+            this.echo("Time: Sat 2014-03-01 10:00:00 +0800\n");
         }
     }, {
         greetings: function() {
@@ -75,7 +75,7 @@ jQuery(function($) {
                 "|  |   ' ,-.  || .-. '|        ||  | |  |    |  .--.  |' ,-.  || .--'|     /'-.  .-'|  .-.  || .-. ||      \\ \n" +
                 "|  '--.\\ '-'  || `-' ||  |  |  |'  '-'  '    |  |  |  |\\ '-'  |\\ `--.|  \\  \\  |  |  |  | |  |' '-' '|  ||  | \n" +
                 "`-----' `--`--' `---' `--`--`--' `-----'     `--'  `--' `--`--' `---'`--'`--' `--'  `--' `--' `---' `--''--' \n" +
-                "                                                                                                             \n" +
+                "
                 "What can I do to [[u]help] you?
                 ";
         }
